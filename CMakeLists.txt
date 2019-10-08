@@ -11,4 +11,7 @@ catkin_package()
 ## Build talker and listener
 include_directories(include ${catkin_INCLUDE_DIRS})
 
+add_executable(rov_velocity_node src/rov_velocity.cpp)
+target_link_libraries(rov_velocity_node ${catkin_LIBRARIES})
+
 # %EndTag(FULLTEXT)%
